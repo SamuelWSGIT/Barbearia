@@ -1,0 +1,150 @@
+/* ===== corpo do site ====== */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 16px;
+}
+
+header{
+	font-size: 2rem;
+}
+
+header h1{
+	font-size: 1.5em;
+}
+
+header {
+	background: #FFFFFF;
+	padding: 20px 0;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav {
+	width: 50%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li:nth-child(-n+2) {
+	border-right: 1px solid black;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: .7em;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	transform: scale(1.1);
+	transition: .2s all ease;
+	text-decoration: underline;
+}
+
+/* ===== Contato ====== */
+
+main {
+    background-color: #CCCCCC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form legend{
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+form label, form label input{
+	cursor: pointer;
+}
+
+.input-padrao{
+	display: block;
+	margin: 5px 0 20px 0;
+	padding: 5px;
+	width: 550px;
+}
+
+.checkbox{
+	margin: 20px 0;
+}
+
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+}
+
+.enviar:hover{
+	background: darkorange;
+	cursor: pointer;
+	transition: .5s all;
+	transform: scale(1.05);
+}
+
+table{
+	margin: 20px 0 40px;
+}
+
+table thead{
+	background: #555;
+	color: white;
+	font-weight: bold;
+}
+
+table td, th{
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+/* ===== Rodape ====== */
+
+footer {
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	background: url("../img/bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
