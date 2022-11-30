@@ -1,5 +1,21 @@
 /* ===== corpo do site ====== */
 
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+html{
+	font-size: 16px;
+}
+
+header{
+	font-size: 2rem;
+}
+
+header h1{
+	font-size: 1.5em;
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -101,7 +117,8 @@ form label, form label input{
 }
 
 .enviar{
-	width: 40%;
+	width: 50%;
+	margin: 0 auto;
 	padding: 15px 0;
 	background: orange;
 	color: white;
@@ -119,7 +136,7 @@ form label, form label input{
 }
 
 table{
-	margin: 20px 0 40px;
+	margin: 0 0 40px;
 }
 
 table thead{
@@ -147,4 +164,51 @@ footer {
 	color: #FFFFFF;
 	font-size: 13px;
 	margin: 20px 0 0;
+}
+
+/* ===== Responsivo ===== */
+
+@media screen and (max-width: 480px) { 
+
+    .caixa{
+		flex-direction: column;
+	}
+
+	nav{
+		width: 100%;
+	}
+	nav ul {
+		font-size: 25px;
+	}
+	nav li:nth-child(-n+2) {
+		border-right: none;
+	}
+	nav li{
+		width: min-content;
+	}
+	form{
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	.titulo-principal{
+		font-size: 1em;
+	}
+
+	.input-padrao, label{
+		width: auto;
+	}
+
+	form legend, form label{
+		font-size: 1em;
+	}
+	fieldset, table{
+		margin: 1em 0;
+	}
+
+	.enviar{
+		width: 80%;
+		margin: 0 auto;
+	}
+
 }

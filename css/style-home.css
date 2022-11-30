@@ -261,13 +261,14 @@ footer {
 /* ===== Responsivo ===== */
 
 @media screen and (max-width: 480px) { 
+
     .caixa{
 		flex-direction: column;
 	}
 	.principal, .mapa-item, .conteudo-beneficios, .video{
 		width: auto;
 	}
-	.video, .imagem-beneficios{
+	.imagem-beneficios{
 		box-shadow: none;
 	}
 	nav{
@@ -278,5 +279,24 @@ footer {
 	}
 	nav li:nth-child(-n+2) {
 		border-right: none;
+	}
+	nav li{
+		width: min-content;
+	}
+	.principal, .mapa-item, .conteudo-beneficios{
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	.titulo-principal{
+		font-size: 1em;
+	}
+	.beneficios ul{
+		font-size: .6em;
+		margin: 0 0 0 0;
+	}
+
+	.video{
+		display: none;
 	}
 }
